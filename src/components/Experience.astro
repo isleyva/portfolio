@@ -1,0 +1,39 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Abr 2023 - Actualmente...",
+    title: "Desarrollador de software",
+    company: "Idea ingeniería",
+    description:
+      "Desarrollo de gemelos digitales para industrias a nivel internacional incluyendo la creación de módulos y funcionalidades útiles para el desempeño de trabajos industriales. Funcionalidades como la visualización de documentos, análisis de datos, simulación de procesos, control de acceso para usuarios, entre otros.",
+      technologies: "TypeScript, React, Docker, Git, Microsoft Azure, Azure DevOps, Material-UI(MUI), entre otras mas especificas para el desarrollo de gemelos digitales(Three.js, Autodesk).",
+  },
+  {
+    date: "Nov 2022 - abr 2023",
+    title: "Desarrollador de software",
+    company: "Nomad Homes",
+    description:
+      "Proyecto dedicado al sector hipotetario, desarrollo de una plataforma web para la compra y venta de inmuebles en el mercado internacional. Creación de módulos y funcionalidades útiles para la gestión de inmuebles, visualización de propiedades, negociaiones de hipotecas y contratos, entre otros.",
+      technologies: "TypeScript, React, NextJs, Redux Toolkit, Styled Components, Github Git, Jira, AWS. ",
+    },
+  {
+    date: "Feb 2022 - Nov 2023",
+    title: "Desarrollador de software",
+    company: "Arasaka Logi",
+    description:
+      "Proyecto dedicado al sector logístico, desarrollo de una plataforma web para la gestión de envíos y recepción de mercancías.",
+      technologies: "React, Node.js, MongoDB, Docker, Kubernetes, Git, Jira, Confluence, Jenkins, AWS, Azure, Google Cloud, entre otros.",
+    },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
